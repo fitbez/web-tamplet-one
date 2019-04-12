@@ -1,3 +1,7 @@
+:root {
+  --dark: #35424a;
+}
+
 body {
   font: 15px/1.5 Arial, Helvetica, sans-serif;
   padding: 0;
@@ -12,6 +16,11 @@ body {
   overflow: hidden;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 .button_1 {
   height: 38px;
   background: #e8491d;
@@ -20,11 +29,12 @@ body {
   color: #ffffff;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
+.dark {
+  padding: 38px;
+  background: var(--dark);
+  color: #ffffff;
+  margin-top: 0 10px 0 10px;
 }
-
 /* Header */
 header {
   background: #35424a;
@@ -125,6 +135,18 @@ header a:hover {
   width: 90px;
 }
 
+/* Sidebar */
+aside#sidebar {
+  float: right;
+  width: 30%;
+  margin-top: 10px;
+}
+
+/* Main-col */
+article#main-col {
+  float: left;
+  width: 65%;
+}
 footer {
   padding: 20px;
   margin-top: 20px;
